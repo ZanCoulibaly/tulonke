@@ -49,7 +49,7 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 20;
-const INCORRECT_POINTS = -10;
+// const INCORRECT_POINTS = -5;
 const MAX_QUESTIONS = 7;
 
 startGame = () => {
@@ -98,10 +98,9 @@ choices.forEach((choice) => {
 
         if (classToApply === 'correct') {
             incrementScore(CORRECT_BONUS);
-        } else {
-            incrementScore(INCORRECT_POINTS);
         }
         selectedChoice.parentElement.classList.add(classToApply);
+        // incrementScore(INCORRECT_POINTS);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
