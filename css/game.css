@@ -2,10 +2,10 @@
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     border: 0.1rem solid rgba(235, 235, 86, 0.25);
     border-radius: 40px;
-    background-color: #333;
+    background-color: #FF7900;
 }
 
 .choice-container:hover {
@@ -20,10 +20,14 @@
     color: #fff;
 }
 
+.hud-main-text {
+    color: #FF7900;
+}
+
 .choice-text {
-    padding: 1.3rem;
+    padding: 1.2rem;
     width: 100%;
-    color: orange;
+    color: #fff;
 }
 
 .correct {
@@ -63,7 +67,7 @@
 
 #progressBarFull {
     height: 2.2rem;
-    background-color: orange;
+    background-color: #FF7900;
     border-radius: 30px;
     width: 0%;
 }
@@ -74,7 +78,7 @@
 #loader {
     border: 1.6rem solid white;
     border-radius: 50%;
-    border-top: 1.2rem solid orange;
+    border-top: 1.2rem solid #FF7900;
     width: 12rem;
     height: 12rem;
     animation: spin 2s linear infinite;
