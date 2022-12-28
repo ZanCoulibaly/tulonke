@@ -26,3 +26,11 @@ saveHighScore = (e) => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('/highscores.html');
 };
+
+document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+// document.querySelector('img').addEventListener('contextmenu', disableRightClick);
+document.addEventListener('contextmenu', disableRightClick);
+
+function disableRightClick(e) {
+    e.preventDefault();
+}

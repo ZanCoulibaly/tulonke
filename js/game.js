@@ -113,3 +113,11 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
+
+document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+// document.querySelector('img').addEventListener('contextmenu', disableRightClick);
+document.addEventListener('contextmenu', disableRightClick);
+
+function disableRightClick(e) {
+    e.preventDefault();
+}
