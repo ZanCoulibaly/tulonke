@@ -10,7 +10,7 @@
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 233, 86, 0.5);
+    /* box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 233, 86, 0.5); */
     transform: translateY(-0.1rem);
     transition: transform 150ms;
     color: #fff;
@@ -27,7 +27,7 @@
 }
 
 .correct {
-    background-color: #064916;
+    background-color: green;
     color: #fff;
 }
 
