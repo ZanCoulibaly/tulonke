@@ -14,3 +14,29 @@
 .high-score:hover {
     transform: scale(1.025);
 }
+
+.btnOne {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.share_twitter {
+    color: #fff;
+    background: rgb(10, 230, 222);
+    border: 2px solid rgb(10, 230, 222);
+    padding: 2px;
+    cursor: pointer;
+}
+
+.share_facebook {
+    color: #fff;
+    background: rgb(1, 94, 200);
+    border: 2px solid rgb(1, 94, 200);
+    padding: 2px;
+    cursor: pointer;
+}
