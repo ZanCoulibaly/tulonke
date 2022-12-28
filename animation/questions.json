@@ -63,14 +63,6 @@
             "question": "Choix l'émission qui soutient l'entrepreneuriat chez Orange",
             "correct_answer": "Wuli ka djo",
             "incorrect_answers": ["Demeso orange", "Orange Fondation", "Orange digital center"]
-        },
-        {
-            "category": "General Knowledge",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "Orange Mali dispose t-il une école?",
-            "correct_answer": "oui",
-            "incorrect_answers": ["non"]
         }
     ]
 }
