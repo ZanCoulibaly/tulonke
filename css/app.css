@@ -23,11 +23,17 @@ h4 {
     margin-bottom: 1rem;
 }
 
-h1 {
+.titleAnime {
     font-size: 5.4rem;
     color: #FF7900;
     margin-bottom: 5rem;
     animation: anime 2s infinite linear;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #FF7900;
+    margin-bottom: 5rem;
 }
 
 h1>span {
