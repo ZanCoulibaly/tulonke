@@ -13,6 +13,7 @@
     box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 233, 86, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+    color: #fff;
 }
 
 #question {
@@ -25,13 +26,19 @@
     color: orange;
 }
 
+.choice-text:active {
+    padding: 1.3rem;
+    width: 100%;
+    color: white;
+}
+
 .correct {
-    background-color: #28a745;
+    background-color: #064916;
     color: #fff;
 }
 
 .incorrect {
-    background-color: #b22c33;
+    background-color: #bd0a13;
     color: #fff;
 }
 
