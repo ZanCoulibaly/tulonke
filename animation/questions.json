@@ -68,17 +68,9 @@
             "category": "General Knowledge",
             "type": "multiple",
             "difficulty": "easy",
-            "question": "What is the closest planet to our solar system&#039;s sun?",
-            "correct_answer": "Mercury",
-            "incorrect_answers": ["Mars", "Jupiter", "Earth"]
-        },
-        {
-            "category": "General Knowledge",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "Which country has the union jack in its flag?",
-            "correct_answer": "New Zealand",
-            "incorrect_answers": ["South Africa", "Canada", "Hong Kong"]
+            "question": "Orange Mali dispose t-il une école?",
+            "correct_answer": "oui",
+            "incorrect_answers": ["non"]
         }
     ]
 }
