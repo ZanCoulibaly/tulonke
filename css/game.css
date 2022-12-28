@@ -26,12 +26,6 @@
     color: orange;
 }
 
-.choice-text:active {
-    padding: 1.3rem;
-    width: 100%;
-    color: white;
-}
-
 .correct {
     background-color: #064916;
     color: #fff;

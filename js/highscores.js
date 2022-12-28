@@ -7,7 +7,7 @@ highScoresList.innerHTML = highScores
     })
     .join("");
 
-supprimerScore = () => {
+deleteScore = () => {
     localStorage.removeItem('highScores');
     localStorage.clear();
     window.location.reload();
