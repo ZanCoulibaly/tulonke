@@ -22,21 +22,23 @@
 
 span {
     color: #fff;
+    margin-top: 20px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .share_twitter {
     color: #fff;
-    background: rgb(10, 230, 222);
-    border: 2px solid rgb(10, 230, 222);
+    background: #00ACEE;
+    border: 2px solid #00ACEE;
     padding: 2px;
     cursor: pointer;
 }
 
 .share_facebook {
     color: #fff;
-    background: rgb(1, 94, 200);
-    border: 2px solid rgb(1, 94, 200);
+    background: #3b5998;
+    border: 2px solid #3b5998;
     padding: 2px;
     cursor: pointer;
 }
