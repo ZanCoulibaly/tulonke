@@ -18,14 +18,16 @@
 
 #image {
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     left: 15%;
     width: 200px;
     height: 100px;
+    margin-bottom: 0px;
 }
 
 #question {
     color: #fff;
+    margin-top: -30px;
 }
 
 .hud-main-text {
