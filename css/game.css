@@ -18,9 +18,9 @@
 
 #image {
     position: relative;
-    bottom: 60px;
+    bottom: 50px;
     left: 15%;
-    width: 200px;
+    width: 170px;
     height: 100px;
     margin-bottom: 0px;
 }
@@ -76,7 +76,7 @@
 }
 
 #progressBarFull {
-    height: 2.2rem;
+    height: 1.2rem;
     background-color: #FF7900;
     border-radius: 30px;
     width: 0%;
