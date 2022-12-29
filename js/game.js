@@ -1,5 +1,6 @@
 const question = document.getElementById('question');
 question.style.fontSize = '18px';
+const image = document.getElementById('image');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
@@ -24,6 +25,7 @@ fetch(
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
+                image: loadedQuestion.image,
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -75,12 +77,13 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerHTML = currentQuestion.question;
+    image.innerHTML = `<img src="${currentQuestion.image}" alt="" width="100%" height="100px">`;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerHTML = currentQuestion['choice' + number];
     });
-
+    // console.log(image.innerHTML);
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
 };
