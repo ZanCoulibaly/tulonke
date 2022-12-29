@@ -36,7 +36,7 @@
             "category": "General Knowledge",
             "type": "multiple",
             "difficulty": "easy",
-            "question": "Choix la bonne reponse",
+            "question": "Choisir la bonne reponse",
             "correct_answer": "OMS est une app qui permet de faire les recharges,paiement et transactions",
             "incorrect_answers": ["Orange Mali Sugu est une app chat comme whatsapp et viber", "OMS est une appllication de collection musical", "Musique,Video et les informations quotidiennnes"]
         },
@@ -60,7 +60,7 @@
             "category": "General Knowledge",
             "type": "multiple",
             "difficulty": "easy",
-            "question": "Choix l'émission qui soutient l'entrepreneuriat chez Orange",
+            "question": "Choisir l'émission qui soutient l'entrepreneuriat chez Orange",
             "correct_answer": "Wuli ka djo",
             "incorrect_answers": ["Demeso orange", "Orange Fondation", "Orange digital center"]
         }
