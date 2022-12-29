@@ -42,8 +42,8 @@
             "difficulty": "easy",
             "image": "/image/orangemalisugu.png",
             "question": "Choisir la bonne reponse",
-            "correct_answer": "OMS est une app qui permet de faire les recharges,paiement et transactions",
-            "incorrect_answers": ["Orange Mali Sugu est une app chat comme whatsapp et viber", "OMS est une appllication de collection musical", "Musique,Video et les informations quotidiennnes"]
+            "correct_answer": "App OMS est totalement gratuit",
+            "incorrect_answers": ["OMS est payant à partir du version 2", "OMS est payant en version beta", "Tout est payant"]
         },
         {
             "category": "General Knowledge",
