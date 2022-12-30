@@ -46,6 +46,14 @@
     color: #fff;
 }
 
+#positif {
+    color: #fff
+}
+
+#negatif {
+    color: #fff
+}
+
 .correct {
     background-color: green;
     color: #fff;
