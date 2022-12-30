@@ -125,7 +125,7 @@ incrementScore = (num) => {
         pasif.innerHTML = `<img src="/image/02.png" alt="" width="50px" height="40px"/>`;
         nega.remove('negatif');
     } else {
-        pos.innerHTML = `<img src="/image/03.png" alt="" width="50px" height="40px"/>`;
+        pos.innerHTML = `<img src="/image/gagner.png" alt="" width="80px" height="40px"/>`;
         pasif.remove('passif');
     }
 };
