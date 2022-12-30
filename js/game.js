@@ -119,13 +119,13 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
     if (score <= 40) {
-        nega.innerHTML = `<img src="/image/pasmal.png" alt="" width="50px" height="40px"/>`;
+        nega.innerHTML = `<img src="/image/01.png" alt="" width="50px" height="40px"/>`;
     } else
     if (score <= 80) {
-        pasif.innerHTML = `<img src="/image/courage.png" alt="" width="50px" height="40px"/>`;
+        pasif.innerHTML = `<img src="/image/02.png" alt="" width="50px" height="40px"/>`;
         nega.remove('negatif');
     } else {
-        pos.innerHTML = `<img src="/image/bravo.png" alt="" width="50px" height="40px"/>`;
+        pos.innerHTML = `<img src="/image/03.png" alt="" width="50px" height="40px"/>`;
         pasif.remove('passif');
     }
 };
