@@ -5,7 +5,7 @@
             "type": "multiple",
             "difficulty": "easy",
             "image": "/image/orange.png",
-            "question": "Quel est la bonne numéro du service client OrangeMali?",
+            "question": "Quel est le bon numéro du service client OrangeMali?",
             "correct_answer": "7400",
             "incorrect_answers": ["7702", "7701", "7405"]
         },
