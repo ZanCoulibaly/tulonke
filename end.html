@@ -19,11 +19,35 @@
                 <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
             Save
           </button>
+                <!-- <button type="submit" class="submit-todo btn btn-primary" disabled>Add Todo</button> -->
             </form>
             <a class="btn" href="/game.html">Jouer encore</a>
             <a class="btn" href="/">Page d'accueil</a>
         </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBGkGy7DXDWutNDhR3Yt3YOVJuTI4NC2wI",
+            authDomain: "zanquiz-5f6c8.firebaseapp.com",
+            projectId: "zanquiz-5f6c8",
+            storageBucket: "zanquiz-5f6c8.appspot.com",
+            messagingSenderId: "338673702450",
+            appId: "1:338673702450:web:c9368557f48ac12147ce2b",
+            measurementId: "G-CW3H84D6C2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+
+
+    <script src="jQuery/uuidv4.js"></script>
+    <script src="jQuery/jquery.js"></script>
     <script src="js/end.js"></script>
 </body>
 
