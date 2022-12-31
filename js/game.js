@@ -6,9 +6,6 @@ const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 const loader = document.getElementById('loader');
-const pos = document.getElementById('positif');
-const nega = document.getElementById('negatif');
-const pasif = document.getElementById('passif');
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -118,16 +115,6 @@ choices.forEach((choice) => {
 incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
-    if (score <= 40) {
-        nega.innerHTML = `<img src="/image/01.png" alt="" width="50px" height="40px"/>`;
-    } else
-    if (score <= 80) {
-        pasif.innerHTML = `<img src="/image/02.png" alt="" width="50px" height="40px"/>`;
-        nega.remove('negatif');
-    } else {
-        pos.innerHTML = `<img src="/image/gagner.png" alt="" width="80px" height="40px"/>`;
-        pasif.remove('passif');
-    }
 };
 
 document.querySelector('body').addEventListener('contextmenu', disableRightClick);
