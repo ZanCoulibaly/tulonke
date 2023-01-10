@@ -13,7 +13,7 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
-
+let test = [];
 fetch(
         '/animation/questions.json'
     )
@@ -21,6 +21,16 @@ fetch(
         return res.json();
     })
     .then((loadedQuestions) => {
+        // test = loadedQuestions.results.filter((data) => {
+        //     let b = data.mode;
+        //     if (b === 'difficile') {
+        //         console.log(b, 'okkk');
+        //     }
+        //     if (b === 'normale') {
+        //         console.log(b, 'o');
+        //     }
+
+        // });
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
