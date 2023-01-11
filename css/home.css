@@ -7,8 +7,7 @@ body {
 
 .titre>h1 {
     color: #fff;
-    margin-top: 50px;
-    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .titre>h1 b {
@@ -29,12 +28,12 @@ body {
     color: #fff;
 } */
 
-.col>a {
+button>a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
-.col>a:hover {
+button>a:hover {
     text-decoration: none;
     color: black;
 }
