@@ -23,12 +23,18 @@ body {
     border: #fff 2px solid;
 }
 
-.card:hover {
+
+/* .card:hover {
     background-color: #b22c33;
     color: #fff;
-}
+} */
 
 .col>a {
+    text-decoration: none;
+    color: black;
+}
+
+.col>a:hover {
     text-decoration: none;
     color: black;
 }
