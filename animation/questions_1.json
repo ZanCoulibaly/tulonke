@@ -1,0 +1,40 @@
+{
+    "response_code": 0,
+    "results": [{
+            "category": "Questionnaires",
+            "niveau": 1,
+            "mode": "facile",
+            "image": "/image/orange.png",
+            "question": "Quel est le bon numéro du service client OrangeMali?",
+            "correct_answer": "/image/question1.png",
+            "incorrect_answers": ["/image/question2.png", "/image/question3.png", "/image/question4.png"]
+        },
+        {
+            "category": "Questionnaires",
+            "niveau": 1,
+            "mode": "facile",
+            "image": "/image/question2.png",
+            "question": "Le nom du domain OrangeMali?",
+            "correct_answer": "/image/question4.png",
+            "incorrect_answers": ["/image/question2.png", "/image/question3.png", "/image/question1.png"]
+        },
+        {
+            "category": "Questionnaires",
+            "niveau": 1,
+            "mode": "facile",
+            "image": "/image/question2.png",
+            "question": "Le nom du domain OrangeMali?",
+            "correct_answer": "/image/question2.png",
+            "incorrect_answers": ["/image/question1.png", "/image/question3.png", "/image/question4.png"]
+        },
+        {
+            "category": "Questionnaires",
+            "niveau": 1,
+            "mode": "facile",
+            "image": "/image/question2.png",
+            "question": "Le nom du domain OrangeMali?",
+            "correct_answer": "/image/question4.png",
+            "incorrect_answers": ["/image/question2.png", "/image/question3.png", "/image/question1.png"]
+        }
+    ]
+}
