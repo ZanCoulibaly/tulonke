@@ -1,0 +1,43 @@
+body {
+    background: url("/image/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.titre>h1 {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.titre>h1 b {
+    color: #b22c33;
+}
+
+.share_twitter {
+    margin-left: 2x;
+}
+
+.card {
+    border: #fff 2px solid;
+}
+
+.card:hover {
+    background-color: #b22c33;
+    color: #fff;
+}
+
+.col>a {
+    text-decoration: none;
+    color: black;
+}
+
+.tet {
+    margin-top: 20px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 150px;
+}
