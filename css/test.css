@@ -53,14 +53,14 @@
 }
 
 .correct {
-    background-color: green;
+    /* background-color: green; */
     /* width: 200px;
     height: 140px;
     border-radius: 10px; */
 }
 
 .incorrect {
-    background-color: #bd0a13;
+    /* background-color: #bd0a13; */
     /* width: 200px;
     height: 140px;
     border-radius: 10px; */
