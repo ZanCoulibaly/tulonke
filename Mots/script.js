@@ -111,7 +111,7 @@ const init = () => {
                 document.getElementById(
                     "chanceCount"
                 ).innerText = `Restant: ${lossCount}`;
-                message.innerText = `Incorrect Letter`;
+                message.innerText = `Mauvaise lettre`;
                 message.style.color = "#ff0000";
                 if (lossCount == 0) {
                     word.innerHTML = `<b style="color:white">Le mots est :</b> <span style="color:#b22c33">${randomWord}</span>`;
