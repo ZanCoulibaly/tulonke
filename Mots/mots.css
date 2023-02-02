@@ -162,3 +162,60 @@ body {
         transform: translate(0, 0)
     }
 }
+
+
+/* description du jeux */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 200px;
+}
+
+.container p {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    margin: 20px;
+    line-height: 50px;
+    /* text-align: center; */
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    -moz-animation: bouncing-text 5s linear infinite alternate;
+    -webkit-animation: bouncing-text 5s linear infinite alternate;
+    animation: bouncing-text 10s linear infinite alternate;
+}
+
+@-moz-keyframes bouncing-text {
+    0% {
+        -moz-transform: translateX(50%);
+    }
+    100% {
+        -moz-transform: translateX(-50%);
+    }
+}
+
+@-webkit-keyframes bouncing-text {
+    0% {
+        -webkit-transform: translateX(50%);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+    }
+}
+
+@keyframes bouncing-text {
+    0% {
+        -moz-transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    100% {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
