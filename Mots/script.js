@@ -21,12 +21,15 @@ const letterContainer = document.getElementById("letter-container");
 const userInpSection = document.getElementById("user-input-section");
 const resultText = document.getElementById("result");
 const word = document.getElementById("word");
+const scoreText = document.getElementById("score");
+const scoreFinale = document.getElementById("scoreFinal");
 const words = Object.keys(options);
 let randomWord = "",
     randomHint = "";
 let winCount = 0,
     lossCount = 0;
 let count = 0;
+let score = "";
 //Generate random value
 const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
 //Block all the buttons
@@ -38,6 +41,7 @@ const blocker = () => {
 startBtn.addEventListener("click", () => {
     controls.classList.add("hide");
     init();
+
 });
 //Stop Game
 const stopGame = () => {
@@ -58,12 +62,16 @@ const generateWord = () => {
     //Display each element as span
     userInpSection.innerHTML = displayItem;
     userInpSection.innerHTML += `<div id='chanceCount'>Restant: ${lossCount}</div>`;
-    // userInpSection.innerHTML += `<div id='chanceCount1'>Chances Left: ${count}</div>`;
+    // userInpSection.innerHTML += `<div id='chanceCount1'>Score: ${score}</div>`;
+
+    console.log(score);
 };
 //Initial Function
 const init = () => {
     winCount = 0;
     count = 0;
+    score = "";
+    scoreFinale.innerHTML = "";
     lossCount = 5;
     randomWord = "";
     word.innerText = "";
@@ -95,12 +103,16 @@ const init = () => {
                         inputSpace[index].innerText = char;
                         //increment counter
                         winCount += 1;
+                        score = count += 5;
+                        scoreText.innerHTML = `Score: ${score}`;
                         //If winCount equals word length
                         if (winCount == charArray.length) {
                             resultText.innerHTML = `<img src="./assets/icone/gagner.png" alt=""  width="90px" height="90px">`;
+                            console.log(score);
                             startBtn.innerText = "Commencer";
                             //block all buttons
                             blocker();
+                            scoreFinale.innerHTML = `ScoreFinal : ${score}`;
                         }
                     }
                 });
@@ -108,6 +120,8 @@ const init = () => {
                 //lose count
                 button.classList.add("incorrect");
                 lossCount -= 1;
+                score = count -= 2;
+                scoreText.innerHTML = `Score: ${score}`;
                 document.getElementById(
                     "chanceCount"
                 ).innerText = `Restant: ${lossCount}`;
@@ -117,7 +131,10 @@ const init = () => {
                     word.innerHTML = `<b style="color:white">Le mots est :</b> <span style="color:#b22c33">${randomWord}</span>`;
                     resultText.innerHTML = `<img src="./assets/icone/01.png" id="photo" alt=""  width="70px" height="70px">`;
                     blocker();
+                    scoreFinale.innerHTML = `ScoreFinal : ${score}`;
                 }
+
+
             }
             //Disable clicked buttons
             button.disabled = true;
