@@ -731,8 +731,8 @@ window.onload = function() {
             
             context.fillStyle = "#ffffff";
             context.font = "24px Verdana";
-            drawCenterText("Game Over!", level.x, level.y + level.height / 2 + 10, level.width);
-            drawCenterText("Click to start", level.x, level.y + level.height / 2 + 40, level.width);
+            drawCenterText("Perdu 🥱!", level.x, level.y + level.height / 2 + 10, level.width);
+            drawCenterText("Cliquez pour reprendre", level.x, level.y + level.height / 2 + 40, level.width);
         }
     }
     
