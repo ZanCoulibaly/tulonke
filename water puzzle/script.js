@@ -221,7 +221,7 @@ function Won() {
     }
     won=true;
     //console.log("hello");
-    level.innerHTML = `<div id="won">Vous avez gagné<br> <b>${moves}</b>Points</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
+    level.innerHTML = `<div id="won">Vous avez gagné<br> <b>${moves}</b> Points</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
 }
 
 function shuffle(x) {
