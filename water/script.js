@@ -258,4 +258,4 @@ var downloadTimer = setInterval(function(){
     document.getElementById("countdown").innerHTML ="Temps: " + timer + " s";
   }
   timer -= 1;
-}, 1000);
+}, 1200);
