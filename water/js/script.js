@@ -221,6 +221,7 @@ function Won() {
     }
     won=true;
     //console.log("hello");
+   
     level.innerHTML = `<div id="won">Vous avez pris<br> <b>${timer}</b> Secondes</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
 }
 
@@ -254,7 +255,10 @@ var downloadTimer = setInterval(function(){
   if(timer <= 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Terminé!!";
+    window.location.assign('./perdu.html');
+    // level.innerHTML = `<div id="won">Le temps est épissé <br> <b>${timer}</b> Secondes</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
   } else {
+   
     document.getElementById("countdown").innerHTML ="Temps: " + timer + " s";
   }
   timer -= 1;
