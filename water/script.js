@@ -60,7 +60,7 @@ function ApplyInfo(a = water) {
             </div>`;
             d++;
         }
-        level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">REPRENDRE</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div><div id = "moves">POINTS: ${moves}</div>`;
+        level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">REPRENDRE</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div><div id = "moves">POINTS: ${moves}</div><div id="countdown"></div>`;
     }
 }
 
