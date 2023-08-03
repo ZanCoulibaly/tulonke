@@ -60,7 +60,7 @@ function ApplyInfo(a = water) {
             </div>`;
             d++;
         }
-        level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">REPRENDRE</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div><div id = "moves">Moves: ${moves}</div>`;
+        level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">REPRENDRE</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div><div id = "moves">POINTS: ${moves}</div>`;
     }
 }
 
@@ -79,7 +79,7 @@ window.Clicked = function(x) {
             if (clicked[0]!=clicked[1]) {
                 el.style.transition = "1s linear";
                 moves++;
-                document.getElementById("moves").innerHTML = "Moves: "+moves;
+                document.getElementById("moves").innerHTML = "POINTS: "+moves;
                 Transfer(...clicked);
             }
             clicked = [];
@@ -148,7 +148,7 @@ function Transfer(a,b) {
     //console.log(p);
     if (q[0]!="transparent" && p[0]!=q[0]) {
         moves-=1;
-        document.getElementById("moves").innerHTML = "Moves: "+moves;
+        document.getElementById("moves").innerHTML = "POINTS: "+moves;
         return;
     }
     for (let i = 3; i >= 0; i--) {
@@ -221,7 +221,7 @@ function Won() {
     }
     won=true;
     //console.log("hello");
-    level.innerHTML = `<div id="won">Vous avez gagné 😁😁</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
+    level.innerHTML = `<div id="won">Vous avez gagné<br> <b>${moves}</b>Points</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
 }
 
 function shuffle(x) {

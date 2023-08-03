@@ -101,10 +101,12 @@ body {
     left: 0;
     width: 100vw;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
 }
-
+#won b{
+    color: brown;
+}
 #white-bg {
     position: absolute;
     left: 0;
