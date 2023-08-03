@@ -60,7 +60,7 @@ function ApplyInfo(a = water) {
             </div>`;
             d++;
         }
-        level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">REPRENDRE</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div><div id = "moves">POINTS: ${moves}</div><div id="countdown"></div>`;
+        level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">REPRENDRE</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div><div id = "moves">POINTS: ${moves}</div> <div id="countdown"></div>`;
     }
 }
 
@@ -221,7 +221,7 @@ function Won() {
     }
     won=true;
     //console.log("hello");
-    level.innerHTML = `<div id="won">Vous avez gagné<br> <b>${moves}</b> Points</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
+    level.innerHTML = `<div id="won">Vous avez pris<br> <b>${timer}</b> Secondes</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
 }
 
 function shuffle(x) {
@@ -248,4 +248,14 @@ window.HideRules = function() {
     document.getElementById("rules-page").style.opacity = "0";
 }
 
-
+// chronomètre du jeux 
+var timer = 60;
+var downloadTimer = setInterval(function(){
+  if(timer <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Terminé!!";
+  } else {
+    document.getElementById("countdown").innerHTML ="Temps: " + timer + " s";
+  }
+  timer -= 1;
+}, 1000);
