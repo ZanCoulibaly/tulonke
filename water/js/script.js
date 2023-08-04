@@ -207,9 +207,11 @@ window.Restart = function() {
     water = w.map((a)=>[...a]);
     won=false;
     ApplyInfo(w);
+    timer= 0;
 }
 
 window.ShowMenu = function() {
+    timer=0;
     document.getElementById("level").style.display = "none";
 }
 
@@ -222,7 +224,7 @@ function Won() {
     won=true;
     //console.log("hello");
    
-    level.innerHTML = `<div id="won">Vous avez pris<br> <b>${timer}</b> Secondes</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
+    level.innerHTML = `<div id="won">Vous avez pris<br> <b>${600-timer}</b> Secondes</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
 }
 
 function shuffle(x) {
@@ -250,12 +252,13 @@ window.HideRules = function() {
 }
 
 // chronomètre du jeux 
-var timer = 60;
+var timer = 600;
+var timers = 600;
 var downloadTimer = setInterval(function(){
   if(timer <= 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Terminé!!";
-    window.location.assign('./perdu.html');
+    window.location.assign('./index.html');
     // level.innerHTML = `<div id="won">Le temps est épissé <br> <b>${timer}</b> Secondes</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">ACCUEIL</div>`;
   } else {
    
